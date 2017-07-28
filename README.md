@@ -1,8 +1,10 @@
 # SatNOGS Rotator Controller
 
-Firmware and electronics designs for [SatNOGS Rotator](https://github.com/satnogs/satnogs-rotator/).
+Electronics designs for [SatNOGS Rotator](https://github.com/satnogs/satnogs-rotator/).
 
-Repository includes all source files for PCB's and firmware for the SatNOGS rotator controller assembly.
+Repository includes all source files of PCB's for the SatNOGS rotator controller assembly.
+
+Firmware can be found on [satnogs-rotator-firmware](https://github.com/satnogs/satnogs-rotator-firmware).
 
 ## Documentation
 
@@ -19,6 +21,6 @@ Master branch is most times under active development, so expect things to break.
 
 ## License
 
-&copy; 2014-2015 [Libre Space Foundation](http://librespacefoundation.org).
+&copy; 2014-2017 [Libre Space Foundation](http://libre.space).
 
 Licensed under the [CERN OHLv1.2](LICENSE).
