@@ -1,8 +1,8 @@
 (export (version D)
   (design
-    (source /home/azisi/Documents/SatNOGS/satnogs-rotator-controller/PCB/SatNOGS_Encoder/encoder_as5601/encoder_as5601.sch)
-    (date "Fri 09 Sep 2016 16:37:38 EEST")
-    (tool "Eeschema 4.0.3-stable")
+    (source /home/azisi/Documents/SatNOGS/satnogs-rotator-controller/satnogs_encoder/encoder_as5601/encoder_as5601.sch)
+    (date "Thu 09 Nov 2017 10:51:22 EET")
+    (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title)
@@ -25,7 +25,7 @@
         (field (name Package) SOIC-8)
         (field (name Notes) -)
         (field (name Price) 2.78€))
-      (libsource (lib satnogs) (part AS5601))
+      (libsource (lib encoder_as5601-rescue) (part AS5601-RESCUE-encoder_as5601))
       (sheetpath (names /) (tstamps /))
       (tstamp 56B9A895))
     (comp (ref C1)
@@ -56,7 +56,7 @@
       (tstamp 56B9ACF0))
     (comp (ref P1)
       (value CONN_02X05)
-      (footprint Pin_Headers:Pin_Header_Straight_2x05)
+      (footprint Pin_Headers:Pin_Header_Straight_2x05_Pitch2.54mm)
       (datasheet https://cdn.sparkfun.com/datasheets/Prototyping/01103.pdf)
       (fields
         (field (name Distributor) "SparkFun COM-12792")
@@ -64,7 +64,7 @@
         (field (name Package) "2x40 pin right-angle PTH pitch 2.54")
         (field (name Notes) -)
         (field (name Price) 1.85€))
-      (libsource (lib conn) (part CONN_02X05))
+      (libsource (lib encoder_as5601-cache) (part CONN_02X05))
       (sheetpath (names /) (tstamps /))
       (tstamp 56B9CF83))
     (comp (ref R1)
@@ -107,10 +107,10 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5703C90F)))
   (libparts
-    (libpart (lib satnogs) (part AS5601)
+    (libpart (lib encoder_as5601-rescue) (part AS5601-RESCUE-encoder_as5601)
       (fields
         (field (name Reference) U)
-        (field (name Value) AS5601))
+        (field (name Value) AS5601-RESCUE-encoder_as5601))
       (pins
         (pin (num 1) (name 5V) (type power_in))
         (pin (num 2) (name 3V3) (type power_in))
@@ -120,8 +120,7 @@
         (pin (num 6) (name SDA) (type BiDi))
         (pin (num 7) (name SCL) (type input))
         (pin (num 8) (name A) (type output))))
-    (libpart (lib conn) (part CONN_02X05)
-      (description "Connector, double row, 02x05")
+    (libpart (lib encoder_as5601-cache) (part CONN_02X05)
       (footprints
         (fp Pin_Header_Straight_2X05)
         (fp Pin_Header_Angled_2X05)
@@ -144,11 +143,7 @@
     (libpart (lib device) (part C_Small)
       (description "Unpolarized capacitor")
       (footprints
-        (fp C?)
-        (fp C_????_*)
-        (fp C_????)
-        (fp SMD*_c)
-        (fp Capacitor*))
+        (fp C_*))
       (fields
         (field (name Reference) C)
         (field (name Value) C_Small))
@@ -156,7 +151,7 @@
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
     (libpart (lib device) (part Q_NMOS_GSD)
-      (description "Transistor N-MOSFET (general)")
+      (description "Transistor N-MOSFETwith substrate diode (general)")
       (fields
         (field (name Reference) Q)
         (field (name Value) Q_NMOS_GSD))
@@ -168,7 +163,7 @@
       (description Resistor)
       (footprints
         (fp R_*)
-        (fp Resistor_*))
+        (fp R_*))
       (fields
         (field (name Reference) R)
         (field (name Value) R))
@@ -176,10 +171,10 @@
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive)))))
   (libraries
-    (library (logical conn)
-      (uri /usr/share/kicad/library/conn.lib))
-    (library (logical satnogs)
-      (uri /home/azisi/Documents/SatNOGS/satnogs-rotator-controller/PCB/library/satnogs.lib))
+    (library (logical encoder_as5601-cache)
+      (uri /home/azisi/Documents/SatNOGS/satnogs-rotator-controller/satnogs_encoder/encoder_as5601/encoder_as5601-cache.lib))
+    (library (logical encoder_as5601-rescue)
+      (uri /home/azisi/Documents/SatNOGS/satnogs-rotator-controller/satnogs_encoder/encoder_as5601/encoder_as5601-rescue.lib))
     (library (logical device)
       (uri /usr/share/kicad/library/device.lib)))
   (nets
