@@ -2,8 +2,8 @@
 
   (general
     (links 223)
-    (no_connects 2)
-    (area 0 0 0 0)
+    (no_connects 0)
+    (area 89.165715 39.24 194.044285 131.015)
     (thickness 1.6)
     (drawings 71)
     (tracks 553)
@@ -1175,10 +1175,10 @@
       (net 62 /SDA0))
     (pad 8 thru_hole oval (at 2.54 7.62 90) (size 1.7272 1.7272) (drill 1.016) (layers *.Cu *.Mask F.SilkS)
       (net 2 GND))
-    (model Pin_Headers.3dshapes/Pin_Header_Straight_2x04.wrl
-      (at (xyz 0.05 -0.15 0))
+    (model Pin_Headers.3dshapes/Pin_Header_Straight_2x04_Pitch2.54mm.wrl
+      (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 90))
+      (rotate (xyz 0 0 0))
     )
   )
 
@@ -1303,7 +1303,7 @@
       (net 1 +5V))
     (pad 2 smd rect (at 1.35 0 90) (size 1.5 1.3) (layers B.Cu B.Paste B.Mask)
       (net 62 /SDA0))
-    (model Resistors_SMD.3dshapes/R_0805_HandSoldering.wrl
+    (model Resistors_SMD.3dshapes/R_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1349,10 +1349,10 @@
       (net 69 /DTR))
     (pad 8 thru_hole oval (at 2.54 7.62 270) (size 1.7272 1.7272) (drill 1.016) (layers *.Cu *.Mask)
       (net 2 GND))
-    (model Pin_Headers.3dshapes/Pin_Header_Straight_2x04.wrl
-      (at (xyz 0.05 -0.15 0))
+    (model Pin_Headers.3dshapes/Pin_Header_Straight_2x04_Pitch2.54mm.wrl
+      (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 90))
+      (rotate (xyz 0 0 0))
     )
   )
 
@@ -1407,7 +1407,7 @@
       (net 1 +5V))
     (pad 2 smd rect (at 1.25 0 270) (size 1.5 1.25) (layers F.Cu F.Paste F.Mask)
       (net 2 GND))
-    (model Capacitors_SMD.3dshapes/C_0805_HandSoldering.wrl
+    (model Capacitors_SMD.3dshapes/C_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1450,10 +1450,10 @@
       (net 1 +5V))
     (pad 6 thru_hole oval (at 2.54 5.08 90) (size 1.7272 1.7272) (drill 1.016) (layers *.Cu *.Mask F.SilkS)
       (net 1 +5V))
-    (model Pin_Headers.3dshapes/Pin_Header_Straight_2x03.wrl
-      (at (xyz 0.05 -0.1 0))
+    (model Pin_Headers.3dshapes/Pin_Header_Straight_2x03_Pitch2.54mm.wrl
+      (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 90))
+      (rotate (xyz 0 0 0))
     )
   )
 
@@ -1479,7 +1479,7 @@
       (net 8 /B))
     (pad 2 smd rect (at 1.35 0 180) (size 1.5 1.3) (layers F.Cu F.Paste F.Mask)
       (net 7 /A))
-    (model Resistors_SMD.3dshapes/R_0805_HandSoldering.wrl
+    (model Resistors_SMD.3dshapes/R_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1508,7 +1508,7 @@
       (net 1 +5V))
     (pad 2 smd rect (at 1.35 0 90) (size 1.5 1.3) (layers B.Cu B.Paste B.Mask)
       (net 63 /SCL0))
-    (model Resistors_SMD.3dshapes/R_0805_HandSoldering.wrl
+    (model Resistors_SMD.3dshapes/R_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1566,7 +1566,7 @@
       (net 1 +5V))
     (pad 2 smd rect (at 1.35 0 90) (size 1.5 1.3) (layers B.Cu B.Paste B.Mask)
       (net 20 /SCL1))
-    (model Resistors_SMD.3dshapes/R_0805_HandSoldering.wrl
+    (model Resistors_SMD.3dshapes/R_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1624,7 +1624,7 @@
       (net 72 "Net-(R8-Pad1)"))
     (pad 2 smd rect (at 1.35 0 270) (size 1.5 1.3) (layers F.Cu F.Paste F.Mask)
       (net 8 /B))
-    (model Resistors_SMD.3dshapes/R_0805_HandSoldering.wrl
+    (model Resistors_SMD.3dshapes/R_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1653,7 +1653,7 @@
       (net 7 /A))
     (pad 2 smd rect (at 1.35 0 90) (size 1.5 1.3) (layers F.Cu F.Paste F.Mask)
       (net 73 "Net-(R9-Pad2)"))
-    (model Resistors_SMD.3dshapes/R_0805_HandSoldering.wrl
+    (model Resistors_SMD.3dshapes/R_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1682,7 +1682,7 @@
       (net 1 +5V))
     (pad 2 smd rect (at 1.35 0 90) (size 1.5 1.3) (layers B.Cu B.Paste B.Mask)
       (net 21 /SDA1))
-    (model Resistors_SMD.3dshapes/R_0805_HandSoldering.wrl
+    (model Resistors_SMD.3dshapes/R_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1740,7 +1740,7 @@
       (net 3 /VIN))
     (pad 2 smd rect (at 1.35 0) (size 1.5 1.3) (layers F.Cu F.Paste F.Mask)
       (net 36 "Net-(F1-Pad1)"))
-    (model Resistors_SMD.3dshapes/R_0805_HandSoldering.wrl
+    (model Resistors_SMD.3dshapes/R_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1943,7 +1943,7 @@
       (net 58 /BOOT))
     (pad 2 smd rect (at 1.25 0 90) (size 1.5 1.25) (layers F.Cu F.Paste F.Mask)
       (net 59 /SW))
-    (model Capacitors_SMD.3dshapes/C_0805_HandSoldering.wrl
+    (model Capacitors_SMD.3dshapes/C_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1972,7 +1972,7 @@
       (net 54 "Net-(C7-Pad1)"))
     (pad 2 smd rect (at 1.25 0 90) (size 1.5 1.25) (layers F.Cu F.Paste F.Mask)
       (net 2 GND))
-    (model Capacitors_SMD.3dshapes/C_0805_HandSoldering.wrl
+    (model Capacitors_SMD.3dshapes/C_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2001,7 +2001,7 @@
       (net 60 /COMP))
     (pad 2 smd rect (at 1.25 0 90) (size 1.5 1.25) (layers F.Cu F.Paste F.Mask)
       (net 2 GND))
-    (model Capacitors_SMD.3dshapes/C_0805_HandSoldering.wrl
+    (model Capacitors_SMD.3dshapes/C_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2030,7 +2030,7 @@
       (net 61 /RT/CLK))
     (pad 2 smd rect (at 1.35 0 180) (size 1.5 1.3) (layers F.Cu F.Paste F.Mask)
       (net 2 GND))
-    (model Resistors_SMD.3dshapes/R_0805_HandSoldering.wrl
+    (model Resistors_SMD.3dshapes/R_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2059,7 +2059,7 @@
       (net 60 /COMP))
     (pad 2 smd rect (at 1.35 0) (size 1.5 1.3) (layers F.Cu F.Paste F.Mask)
       (net 54 "Net-(C7-Pad1)"))
-    (model Resistors_SMD.3dshapes/R_0805_HandSoldering.wrl
+    (model Resistors_SMD.3dshapes/R_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2088,7 +2088,7 @@
       (net 35 +12V))
     (pad 2 smd rect (at 1.35 0 270) (size 1.5 1.3) (layers F.Cu F.Paste F.Mask)
       (net 55 /FB))
-    (model Resistors_SMD.3dshapes/R_0805_HandSoldering.wrl
+    (model Resistors_SMD.3dshapes/R_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2117,7 +2117,7 @@
       (net 55 /FB))
     (pad 2 smd rect (at 1.35 0 90) (size 1.5 1.3) (layers F.Cu F.Paste F.Mask)
       (net 2 GND))
-    (model Resistors_SMD.3dshapes/R_0805_HandSoldering.wrl
+    (model Resistors_SMD.3dshapes/R_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2150,7 +2150,7 @@
       (net 2 GND))
     (pad 2 smd rect (at 1.25 0 270) (size 1.5 1.25) (layers F.Cu F.Paste F.Mask)
       (net 9 /SW1))
-    (model Capacitors_SMD.3dshapes/C_0805_HandSoldering.wrl
+    (model Capacitors_SMD.3dshapes/C_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2183,7 +2183,7 @@
       (net 10 /SW2))
     (pad 2 smd rect (at 1.25 0 90) (size 1.5 1.25) (layers F.Cu F.Paste F.Mask)
       (net 2 GND))
-    (model Capacitors_SMD.3dshapes/C_0805_HandSoldering.wrl
+    (model Capacitors_SMD.3dshapes/C_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2212,7 +2212,7 @@
       (net 9 /SW1))
     (pad 2 smd rect (at 1.35 0 90) (size 1.5 1.3) (layers F.Cu F.Paste F.Mask)
       (net 70 "Net-(P2-Pad1)"))
-    (model Resistors_SMD.3dshapes/R_0805_HandSoldering.wrl
+    (model Resistors_SMD.3dshapes/R_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2241,7 +2241,7 @@
       (net 71 "Net-(P2-Pad2)"))
     (pad 2 smd rect (at 1.35 0 270) (size 1.5 1.3) (layers F.Cu F.Paste F.Mask)
       (net 10 /SW2))
-    (model Resistors_SMD.3dshapes/R_0805_HandSoldering.wrl
+    (model Resistors_SMD.3dshapes/R_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2270,7 +2270,7 @@
       (net 35 +12V))
     (pad 2 smd rect (at 1.35 0 180) (size 1.5 1.3) (layers F.Cu F.Paste F.Mask)
       (net 67 "Net-(C5-Pad1)"))
-    (model Resistors_SMD.3dshapes/R_0805_HandSoldering.wrl
+    (model Resistors_SMD.3dshapes/R_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2303,7 +2303,7 @@
       (net 2 GND))
     (pad 2 smd rect (at 1.25 0 270) (size 1.5 1.25) (layers F.Cu F.Paste F.Mask)
       (net 1 +5V))
-    (model Capacitors_SMD.3dshapes/C_0805_HandSoldering.wrl
+    (model Capacitors_SMD.3dshapes/C_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2332,7 +2332,7 @@
       (net 1 +5V))
     (pad 2 smd rect (at 1.35 0 180) (size 1.5 1.3) (layers B.Cu B.Paste B.Mask)
       (net 64 /SDA))
-    (model Resistors_SMD.3dshapes/R_0805_HandSoldering.wrl
+    (model Resistors_SMD.3dshapes/R_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2361,7 +2361,7 @@
       (net 1 +5V))
     (pad 2 smd rect (at 1.35 0 180) (size 1.5 1.3) (layers B.Cu B.Paste B.Mask)
       (net 65 /SCL))
-    (model Resistors_SMD.3dshapes/R_0805_HandSoldering.wrl
+    (model Resistors_SMD.3dshapes/R_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2409,7 +2409,7 @@
       (net 35 +12V))
     (pad 2 smd rect (at 2.7 0 180) (size 3.5 1.6) (layers F.Cu F.Paste F.Mask)
       (net 2 GND))
-    (model Capacitors_SMD.3dshapes/c_elec_6.3x5.3.wrl
+    (model Capacitors_SMD.3dshapes/CP_Elec_6.3x5.3.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2457,7 +2457,7 @@
       (net 35 +12V))
     (pad 2 smd rect (at 2.7 0 180) (size 3.5 1.6) (layers F.Cu F.Paste F.Mask)
       (net 2 GND))
-    (model Capacitors_SMD.3dshapes/c_elec_6.3x5.3.wrl
+    (model Capacitors_SMD.3dshapes/CP_Elec_6.3x5.3.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2505,7 +2505,7 @@
       (net 67 "Net-(C5-Pad1)"))
     (pad 2 smd rect (at 2.7 0 90) (size 3.5 1.6) (layers F.Cu F.Paste F.Mask)
       (net 2 GND))
-    (model Capacitors_SMD.3dshapes/c_elec_6.3x5.3.wrl
+    (model Capacitors_SMD.3dshapes/CP_Elec_6.3x5.3.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2551,10 +2551,10 @@
       (net 2 GND))
     (pad 8 thru_hole oval (at 2.54 7.62 90) (size 1.7272 1.7272) (drill 1.016) (layers *.Cu *.Mask)
       (net 66 /PB4))
-    (model Pin_Headers.3dshapes/Pin_Header_Straight_2x04.wrl
-      (at (xyz 0.05 -0.15 0))
+    (model Pin_Headers.3dshapes/Pin_Header_Straight_2x04_Pitch2.54mm.wrl
+      (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 90))
+      (rotate (xyz 0 0 0))
     )
   )
 
@@ -2876,7 +2876,7 @@
       (net 68 "Net-(C13-Pad1)"))
     (pad 2 smd rect (at 1.25 0 270) (size 1.5 1.25) (layers F.Cu F.Paste F.Mask)
       (net 69 /DTR))
-    (model Capacitors_SMD.3dshapes/C_0805_HandSoldering.wrl
+    (model Capacitors_SMD.3dshapes/C_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2946,7 +2946,7 @@
       (net 5 /RTS))
     (pad 2 smd rect (at 1.35 0 270) (size 1.5 1.3) (layers F.Cu F.Paste F.Mask)
       (net 2 GND))
-    (model Resistors_SMD.3dshapes/R_0805_HandSoldering.wrl
+    (model Resistors_SMD.3dshapes/R_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -3068,7 +3068,7 @@
       (net 57 /SW_VIN))
     (pad 2 smd rect (at 2 0 270) (size 2 2.5) (layers F.Cu F.Paste F.Mask)
       (net 2 GND))
-    (model Capacitors_SMD.3dshapes/C_1210_HandSoldering.wrl
+    (model Capacitors_SMD.3dshapes/C_1210.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -3101,7 +3101,7 @@
       (net 35 +12V))
     (pad 2 smd rect (at 2 0 270) (size 2 2.5) (layers F.Cu F.Paste F.Mask)
       (net 2 GND))
-    (model Capacitors_SMD.3dshapes/C_1210_HandSoldering.wrl
+    (model Capacitors_SMD.3dshapes/C_1210.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -3368,7 +3368,7 @@
       (net 1 +5V))
     (pad 2 smd rect (at 1.25 0 90) (size 1.5 1.25) (layers F.Cu F.Paste F.Mask)
       (net 2 GND))
-    (model Capacitors_SMD.3dshapes/C_0805_HandSoldering.wrl
+    (model Capacitors_SMD.3dshapes/C_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -3740,6 +3740,11 @@
       (net 36 "Net-(F1-Pad1)"))
     (pad 2 smd rect (at 2.09 0) (size 2.03 2.65) (layers F.Cu F.Paste F.Mask)
       (net 57 /SW_VIN))
+    (model Resistors_SMD.3dshapes/R_1206.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (gr_line (start 130.937 53.213) (end 130.937 50.419) (layer F.SilkS) (width 0.2) (tstamp 589CCD8E))
