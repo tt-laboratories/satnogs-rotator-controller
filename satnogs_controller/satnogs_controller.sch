@@ -608,8 +608,8 @@ F 0 "F1" H 2200 5970 50  0000 C CNN
 F 1 "FUSE" H 2000 5870 50  0000 C CNN
 F 2 "Fuse_Holders_and_Fuses:Fuse_SMD1206_HandSoldering" H 2100 5920 50  0001 C CNN
 F 3 "" H 2100 5920 50  0001 C CNN
-F 4 "Keystone Electronics 3557-10" H 2100 5920 60  0001 C CNN "Mnf."
-F 5 "1.09" H 2100 5920 60  0001 C CNN "Price"
+F 4 "Littelfuse 1206SFS200F/63-2" H 2100 5920 60  0001 C CNN "Mnf."
+F 5 "0.6" H 2100 5920 60  0001 C CNN "Price"
 	1    2100 5920
 	1    0    0    -1  
 $EndComp
