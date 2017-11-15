@@ -2319,4 +2319,55 @@ Wire Wire Line
 	1080 6360 1080 6310
 Text Notes 1650 6770 0    50   ~ 0
 D4 is optional, for transient voltage suppressor
+$Comp
+L CONN_02X03 P6
+U 1 1 5A089C1D
+P 1090 1950
+F 0 "P6" H 1090 2150 50  0000 C CNN
+F 1 "ISP" H 1090 1750 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 1090 750 60  0001 C CNN
+F 3 "" H 1090 750 60  0001 C CNN
+	1    1090 1950
+	1    0    0    -1  
+$EndComp
+Text Label 2480 1130 2    60   ~ 0
+RST
+$Comp
+L GND #PWR?
+U 1 1 5A0994AA
+P 1455 2075
+F 0 "#PWR?" H 1455 1825 50  0001 C CNN
+F 1 "GND" H 1455 1925 50  0000 C CNN
+F 2 "" H 1455 2075 60  0000 C CNN
+F 3 "" H 1455 2075 60  0000 C CNN
+	1    1455 2075
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 5A09973F
+P 1455 1790
+F 0 "#PWR?" H 1455 1640 50  0001 C CNN
+F 1 "+5V" H 1455 1930 50  0000 C CNN
+F 2 "" H 1455 1790 60  0000 C CNN
+F 3 "" H 1455 1790 60  0000 C CNN
+	1    1455 1790
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1340 1850 1455 1850
+Wire Wire Line
+	1455 1850 1455 1790
+Wire Wire Line
+	1340 2050 1455 2050
+Wire Wire Line
+	1455 2050 1455 2075
+Text Label 840  2050 2    60   ~ 0
+RST
+Text Label 840  1950 2    60   ~ 0
+PB5
+Text Label 840  1850 2    60   ~ 0
+PB4
+Text Label 1340 1950 0    60   ~ 0
+M2IN1
 $EndSCHEMATC
