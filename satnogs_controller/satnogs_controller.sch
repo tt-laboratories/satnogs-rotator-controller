@@ -155,9 +155,9 @@ Text Label 3680 2230 0    60   ~ 0
 M2IN2
 Text Label 2480 2130 2    60   ~ 0
 EN
-Text Label 3680 2530 0    60   ~ 0
+Text Label 2480 2330 2    60   ~ 0
 M1IN1
-Text Label 3680 2430 0    60   ~ 0
+Text Label 2480 2230 2    60   ~ 0
 M1IN2
 Text Label 3680 1130 0    60   ~ 0
 M1FB
@@ -223,7 +223,7 @@ F 3 "" H 5580 1990 60  0001 C CNN
 $EndComp
 Text Label 6370 3090 0    60   ~ 0
 SW2
-Text Label 2480 2230 2    60   ~ 0
+Text Label 3680 2430 0    60   ~ 0
 SW1
 $Comp
 L +5V #PWR05
@@ -1411,7 +1411,7 @@ F 3 "" H 1850 1370 60  0000 C CNN
 	1    1850 1370
 	1    0    0    -1  
 $EndComp
-Text Label 2480 2330 2    60   ~ 0
+Text Label 3680 2530 0    60   ~ 0
 M2SF
 $Comp
 L TC74 U8
@@ -2357,7 +2357,7 @@ U 1 1 5A0C6521
 P 1165 4580
 F 0 "P3" H 1215 4880 50  0000 C CNN
 F 1 "ISP" H 1215 4280 50  0000 C CNN
-F 2 "" H 1165 4580 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch2.54mm" H 1165 4580 50  0001 C CNN
 F 3 "" H 1165 4580 50  0001 C CNN
 	1    1165 4580
 	1    0    0    -1  
