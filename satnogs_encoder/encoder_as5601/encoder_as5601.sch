@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:encoder_as5601-rescue
 LIBS:satnogs
 LIBS:power
 LIBS:device
@@ -45,7 +46,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L AS5601 U1
+L AS5601-RESCUE-encoder_as5601 U1
 U 1 1 56B9A895
 P 5510 3460
 F 0 "U1" H 5510 3460 60  0000 C CNN
@@ -138,7 +139,7 @@ U 1 1 56B9CF83
 P 5510 4610
 F 0 "P1" H 5510 4910 50  0000 C CNN
 F 1 "CONN_02X05" H 5510 4310 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x05" H 5510 3410 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch2.54mm" H 5510 3410 50  0001 C CNN
 F 3 "https://cdn.sparkfun.com/datasheets/Prototyping/01103.pdf" H 5510 3410 50  0001 C CNN
 F 4 "SparkFun COM-12792" H 5510 4610 60  0001 C CNN "Distributor"
 F 5 "-" H 5510 4610 60  0001 C CNN "Manufacturer"
