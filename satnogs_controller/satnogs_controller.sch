@@ -1,79 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:74xgxx
-LIBS:74xx
-LIBS:ac-dc
-LIBS:actel
-LIBS:adc-dac
-LIBS:Altera
-LIBS:analog_devices
-LIBS:analog_switches
-LIBS:atmel
-LIBS:audio
-LIBS:brooktre
-LIBS:cmos4000
-LIBS:cmos_ieee
-LIBS:conn
-LIBS:contrib
-LIBS:cypress
-LIBS:dc-dc
-LIBS:device
-LIBS:digital-audio
-LIBS:diode
-LIBS:display
-LIBS:dsp
-LIBS:elec-unifil
-LIBS:ESD_Protection
-LIBS:ftdi
-LIBS:gennum
-LIBS:hc11
-LIBS:intel
-LIBS:interface
-LIBS:ir
-LIBS:Lattice
-LIBS:linear
-LIBS:maxim
-LIBS:memory
-LIBS:microchip
-LIBS:microchip_dspic33dsc
-LIBS:microchip_pic10mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic32mcu
-LIBS:microcontrollers
-LIBS:motor_drivers
-LIBS:motorola
-LIBS:msp430
-LIBS:nordicsemi
-LIBS:nxp_armmcu
-LIBS:onsemi
-LIBS:opto
-LIBS:Oscillators
-LIBS:philips
-LIBS:power
-LIBS:powerint
-LIBS:Power_Management
-LIBS:pspice
-LIBS:references
-LIBS:regul
-LIBS:relays
-LIBS:rfcom
-LIBS:sensors
-LIBS:silabs
-LIBS:siliconi
-LIBS:stm8
-LIBS:stm32
-LIBS:supertex
-LIBS:switches
-LIBS:texas
-LIBS:transf
-LIBS:transistors
-LIBS:ttl_ieee
-LIBS:valves
-LIBS:video
-LIBS:Xicor
-LIBS:xilinx
-LIBS:Zilog
 LIBS:satnogs
 LIBS:satnogs_controller-cache
 EELAYER 25 0
@@ -82,7 +7,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "SatNOGS Rotator Controller"
-Date "2016-12-11"
+Date "2018-01-21"
 Rev "v2"
 Comp "Libre Space Foundation"
 Comment1 ""
@@ -348,11 +273,11 @@ L CONN_01X04 P7
 U 1 1 56BFEE7D
 P 7320 5380
 F 0 "P7" H 7320 5140 50  0000 C CNN
-F 1 "Motor1" V 7420 5380 50  0000 C CNN
+F 1 "Motor" V 7420 5380 50  0000 C CNN
 F 2 "satnogs:MKDS_1.5-4" H 7320 5380 50  0001 C CNN
 F 3 "" H 7320 5380 50  0001 C CNN
-F 4 "Phoenix 1985467" H 7320 5380 60  0001 C CNN "Mnf."
-F 5 "0.7" H 7320 5380 60  0001 C CNN "Price"
+F 4 "Amphenol-VI0421550000G" H 7320 5380 60  0001 C CNN "Mnf."
+F 5 "0.84" H 7320 5380 60  0001 C CNN "Price"
 	1    7320 5380
 	-1   0    0    -1  
 $EndComp
@@ -442,11 +367,11 @@ L CONN_01X04 P8
 U 1 1 56C001FC
 P 7300 3850
 F 0 "P8" H 7300 3610 50  0000 C CNN
-F 1 "Motor2" V 7400 3850 50  0000 C CNN
+F 1 "Motor" V 7400 3850 50  0000 C CNN
 F 2 "satnogs:MKDS_1.5-4" H 7300 3850 50  0001 C CNN
 F 3 "" H 7300 3850 50  0001 C CNN
-F 4 "Phoenix 1985467" H 7300 3850 60  0001 C CNN "Mnf."
-F 5 "0.7" H 7300 3850 60  0001 C CNN "Price"
+F 4 "Amphenol-VI0421550000G" H 7300 3850 60  0001 C CNN "Mnf."
+F 5 "0.84" H 7300 3850 60  0001 C CNN "Price"
 	1    7300 3850
 	-1   0    0    -1  
 $EndComp
@@ -590,7 +515,7 @@ L FILTER FB1
 U 1 1 57E7000D
 P 1475 5920
 F 0 "FB1" H 1475 6070 50  0000 C CNN
-F 1 "FILTER" H 1475 5820 50  0000 C CNN
+F 1 "FILTER - POWER" H 1475 5820 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" H 1475 5920 50  0001 C CNN
 F 3 "" H 1475 5920 50  0001 C CNN
 F 4 "BLM21PG221SN1D" H 1475 5920 60  0001 C CNN "Mnf."
@@ -1207,6 +1132,8 @@ F 0 "U4" H 8370 3850 50  0000 C CNN
 F 1 "Pololu_A4988" H 8370 3250 50  0000 C CNN
 F 2 "satnogs:Pololu_A4988" H 8370 3850 60  0001 C CNN
 F 3 "" H 8370 3850 60  0000 C CNN
+F 4 "3M-929974-01-30-RK" H 8370 3850 60  0001 C CNN "Mnf."
+F 5 "1.98" H 8370 3850 60  0001 C CNN "Price"
 	1    8370 3850
 	1    0    0    -1  
 $EndComp
@@ -1218,6 +1145,8 @@ F 0 "U3" H 8370 5380 50  0000 C CNN
 F 1 "Pololu_A4988" H 8370 4780 50  0000 C CNN
 F 2 "satnogs:Pololu_A4988" H 8370 5380 60  0001 C CNN
 F 3 "" H 8370 5380 60  0000 C CNN
+F 4 "3M-929974-01-30-RK" H 8370 5380 60  0001 C CNN "Mnf."
+F 5 "1.98" H 8370 5380 60  0001 C CNN "Price"
 	1    8370 5380
 	1    0    0    -1  
 $EndComp
@@ -1229,6 +1158,8 @@ F 0 "U1" H 3080 1830 50  0000 C CNN
 F 1 "Arduino_Pro_Mini" H 3080 830 50  0000 C CNN
 F 2 "satnogs:Arduino_Pro_Mini" H 3080 1730 60  0001 C CNN
 F 3 "" H 3080 1730 60  0000 C CNN
+F 4 "3M-929974-01-30-RK" H 3080 1830 60  0001 C CNN "Mnf."
+F 5 "1.98" H 3080 1830 60  0001 C CNN "Price"
 	1    3080 1830
 	1    0    0    -1  
 $EndComp
@@ -1262,6 +1193,8 @@ F 0 "U6" H 8120 1880 50  0000 C CNN
 F 1 "Pololu_Dual_MC33926" H 8720 980 50  0000 C CNN
 F 2 "satnogs:Pololu_Dual_MC33926" H 8120 1880 60  0001 C CNN
 F 3 "" H 8120 1880 60  0001 C CNN
+F 4 "Wurth-61304011121" H 8120 1880 60  0001 C CNN "Mnf."
+F 5 "1.31" H 8120 1880 60  0001 C CNN "Price"
 	1    8120 1880
 	1    0    0    -1  
 $EndComp
@@ -1421,7 +1354,7 @@ F 0 "U8" H 4320 4470 60  0000 C CNN
 F 1 "TC74" H 4520 4070 60  0000 C CNN
 F 2 "satnogs:SOT-23-5_HandSoldering" H 4220 4370 60  0001 C CNN
 F 3 "" H 4320 4470 60  0001 C CNN
-F 4 "TC74A0-5.0VCTTR" H 4320 4470 60  0001 C CNN "Mnf."
+F 4 "TC74A05.0VCTTR" H 4320 4470 60  0001 C CNN "Mnf."
 F 5 "0.886" H 4320 4470 60  0001 C CNN "Price"
 	1    4320 4470
 	1    0    0    -1  
@@ -1763,8 +1696,8 @@ F 0 "D4" H 1080 6260 50  0000 C CNN
 F 1 "D_TVS" H 1080 6060 50  0000 C CNN
 F 2 "satnogs:DO-214AB_Handsoldering" H 1080 6160 50  0001 C CNN
 F 3 "" H 1080 6160 50  0000 C CNN
-F 4 "SMCJ48A-E3/57T" H 1080 6160 60  0001 C CNN "Mnf."
-F 5 "0.472" H 1080 6160 60  0001 C CNN "Price"
+F 4 "SMCJ48A" H 1080 6160 60  0001 C CNN "Mnf."
+F 5 "0.442" H 1080 6160 60  0001 C CNN "Price"
 	1    1080 6160
 	0    1    1    0   
 $EndComp
@@ -2356,9 +2289,11 @@ L Conn_02x05_Odd_Even P3
 U 1 1 5A0C6521
 P 1165 4580
 F 0 "P3" H 1215 4880 50  0000 C CNN
-F 1 "ISP" H 1215 4280 50  0000 C CNN
+F 1 "INPUT" H 1215 4280 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch2.54mm" H 1165 4580 50  0001 C CNN
 F 3 "" H 1165 4580 50  0001 C CNN
+F 4 "Amphenol-861400402YO2LF" H 1165 4580 60  0001 C CNN "Mnf."
+F 5 "1.18" H 1165 4580 60  0001 C CNN "Price"
 	1    1165 4580
 	1    0    0    -1  
 $EndComp

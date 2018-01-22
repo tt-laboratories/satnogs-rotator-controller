@@ -1,65 +1,54 @@
-Reference, Value, Footprint, Datasheet, Mnf., Price
-P4,I2C,Pin_Headers:Pin_Header_Straight_2x04,,,
-C1,0.1u,Capacitors_SMD:C_0805_HandSoldering,,,08053C104KAT2A,0.094,
-P2,End-Stops,Pin_Headers:Pin_Header_Straight_2x03,,,
-C3,100u,Capacitors_SMD:c_elec_6.3x5.3,,,EXV107M016A9GAA,0.443,
-JP1,Jumper_NO_Small,Resistors_SMD:R_0805_HandSoldering,,,CRCW08050000Z0EA,0.094,
-JP2,Jumper_NO_Small,Resistors_SMD:R_0805_HandSoldering,,,CRCW08050000Z0EA,0.094,
-JP3,Jumper_NO_Small,Resistors_SMD:R_0805_HandSoldering,,,CRCW08050000Z0EA,0.094,
-R4,100k,Resistors_SMD:R_0805_HandSoldering,,,CRCW0805100KJNEA,0.091,
-P7,Motor1,satnogs:MKDS_1.5-4,,,Phoenix 1985467,0.7,
-C4,100u,Capacitors_SMD:c_elec_6.3x5.3,,,EXV107M016A9GAA,0.443,
-JP4,Jumper_NO_Small,Resistors_SMD:R_0805_HandSoldering,,,CRCW08050000Z0EA,0.094,
-JP5,Jumper_NO_Small,Resistors_SMD:R_0805_HandSoldering,,,CRCW08050000Z0EA,0.094,
-JP6,Jumper_NO_Small,Resistors_SMD:R_0805_HandSoldering,,,CRCW08050000Z0EA,0.094,
-R7,100k,Resistors_SMD:R_0805_HandSoldering,,,CRCW0805100KJNEA,0.091,
-P8,Motor2,satnogs:MKDS_1.5-4,,,Phoenix 1985467,0.7,
-R1,120,Resistors_SMD:R_0805_HandSoldering,,,CRCW0805120RJNEA,0.091,
-R3,4.7k,Resistors_SMD:R_0805_HandSoldering,,,CRCW08054K70JNEA,0.091,
-R2,4.7k,Resistors_SMD:R_0805_HandSoldering,,,CRCW08054K70JNEA,0.091,
-R6,4.7k,Resistors_SMD:R_0805_HandSoldering,,,CRCW08054K70JNEA,0.091,
-R5,4.7k,Resistors_SMD:R_0805_HandSoldering,,,CRCW08054K70JNEA,0.091,
-R9,10,Resistors_SMD:R_0805_HandSoldering,,,CRCW080510R0JNEA,0.091,
-JP8,Jumper_NO_Small,Resistors_SMD:R_0805_HandSoldering,,,CRCW08050000Z0EA,0.094,
-JP7,Jumper_NO_Small,Resistors_SMD:R_0805_HandSoldering,,,CRCW08050000Z0EA,0.094,
-FB1,FILTER,Resistors_SMD:R_0805_HandSoldering,,,BLM21PG221SN1D,0.104,
-F1,FUSE,Fuse_Holders_and_Fuses:Fuse_SMD1206_HandSoldering,,,Littelfuse 1206SFS200F/63-2,0.6,
-C5,100u,Capacitors_SMD:c_elec_6.3x5.3,,,EXV107M016A9GAA,0.443,
-D2,D_Schottky,satnogs:DO-214AB_Handsoldering,,,CDBC560-G,0.67,
-U5,TPS54360DDA,satnogs:HSOP-8,,,TPS54360DDAR,4,
-R12,147k,Resistors_SMD:R_0805_HandSoldering,,,CRCW0805147KFKEA,0.091,
-C9,47u,Capacitors_SMD:C_1210_HandSoldering,,,GRM32ER61C476ME15L,0.851,
-C8,10p,Capacitors_SMD:C_0805_HandSoldering,,,C0805C100K5GACTU,0.091,
-C7,7.5n,Capacitors_SMD:C_0805_HandSoldering,,,GRM2195C1H752JA01D,0.244,
-R13,10.5k,Resistors_SMD:R_0805_HandSoldering,,,CRCW080510K5FKEA,0.091,
-R11,26.7k,Resistors_SMD:R_0805_HandSoldering,,,CRCW080526K7FKEA,0.091,
-R10,221k,Resistors_SMD:R_0805_HandSoldering,,,CRCW0805221KFKEA,0.091,
-L1,27u,satnogs:Inductor_Bourns-SRR1210_HandSoldering,,,SRR1210-270M,1,
-D1,D_Schottky,satnogs:DO-214AB_Handsoldering,,,CDBC560-G,0.67,
-C2,2.2u,Capacitors_SMD:C_1210_HandSoldering,,,C3225X7R2A225K230AB,0.697,
-C6,100n,Capacitors_SMD:C_0805_HandSoldering,,,08053C104KAT2A,0.094,
-C11,0.1u,Capacitors_SMD:C_0805_HandSoldering,,,08053C104KAT2A,0.094,
-C10,0.1u,Capacitors_SMD:C_0805_HandSoldering,,,08053C104KAT2A,0.094,
-R14,200,Resistors_SMD:R_0805_HandSoldering,,,CRCW0805200RJNEA,0.091,
-R15,200,Resistors_SMD:R_0805_HandSoldering,,,CRCW0805200RJNEA,0.091,
-FB2,FILTER,Resistors_SMD:R_0805_HandSoldering,,,BLM21AG221SN1D,0.141,
-U7,PCA9540B,satnogs:TSSOP-8_3x3mm_Pitch0.65mm_HandSoldering,,,PCA9540BDP 118,1.23,
-R17,4.7k,Resistors_SMD:R_0805_HandSoldering,,,CRCW08054K70JNEA,0.091,
-R16,4.7k,Resistors_SMD:R_0805_HandSoldering,,,CRCW08054K70JNEA,0.091,
-C12,0.1u,Capacitors_SMD:C_0805_HandSoldering,,,08053C104KAT2A,0.094,
-P1,DEV-PINS,Pin_Headers:Pin_Header_Straight_2x04,,,
-P3,IN-PINS,Pin_Headers:Pin_Header_Straight_2x04,,,
-P5,GND-PAD,Mounting_Holes:MountingHole_2.2mm_M2_DIN965_Pad,,,
-D3,D_TVS_x2_AAC,TO_SOT_Packages_SMD:SOT-23_Handsoldering,,,CDSOT23-SM712,1.53,
-R8,10,Resistors_SMD:R_0805_HandSoldering,,,CRCW080510R0JNEA,0.091,
-R18,10k,Resistors_SMD:R_0805_HandSoldering,,,CRCW080510K0JNEA,0.091,
-U4,Pololu_A4988,satnogs:Pololu_A4988,,,
-U3,Pololu_A4988,satnogs:Pololu_A4988,,,
-U1,Arduino_Pro_Mini,satnogs:Arduino_Pro_Mini,,,
-U6,Pololu_Dual_MC33926,satnogs:Pololu_Dual_MC33926,,,
-C13,0.1u,Capacitors_SMD:C_0805_HandSoldering,,,08053C104KAT2A,0.094,
-U2,SN65HVD485EDR,satnogs:SOIC-8_3.9x4.9mm_Pitch1.27mm_HandSoldering,,,SN65HVD485EDR,1.74,
-U8,TC74,satnogs:SOT-23-5_HandSoldering,,,TC74A0-5.0VCTTR,0.886,
-C14,0.1u,Capacitors_SMD:C_0805_HandSoldering,,,08053C104KAT2A,0.094,
-C15,100u,satnogs:CP_Radial_D10.0mm_P5.00mm,,,RGA101M1JBK-1012G,0.248,
-D4,D_TVS,satnogs:DO-214AB_Handsoldering,,,SMCJ48A-E3/57T,0.472,
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet,Mnf.,Price
+1,b'',b'C_Small',b'C1 C6 C10 C11 C12 C13 C14',b'0.1u',b'C_0805_HandSoldering',b'7',b'',b'08053C104KAT2A',b'0.094'
+2,b'',b'CP',b'C15',b'100u',b'CP_Radial_D10.0mm_P5.00mm',b'1',b'',b'RGA101M1JBK-1012G',b'0.248'
+3,b'',b'CP',b'C3 C4 C5',b'100u',b'c_elec_6.3x5.3',b'3',b'',b'EXV107M016A9GAA',b'0.443'
+4,b'',b'C_Small',b'C8',b'10p',b'C_0805_HandSoldering',b'1',b'',b'C0805C100K5GACTU',b'0.091'
+5,b'',b'C_Small',b'C2',b'2.2u',b'C_1210_HandSoldering',b'1',b'',b'C3225X7R2A225K230AB',b'0.697'
+6,b'',b'C_Small',b'C9',b'47u',b'C_1210_HandSoldering',b'1',b'',b'GRM32ER61C476ME15L',b'0.851'
+7,b'',b'C_Small',b'C7',b'7.5n',b'C_0805_HandSoldering',b'1',b'',b'GRM2195C1H752JA01D',b'0.244'
+8,b'',b'D_Schottky',b'D1 D2',b'D_Schottky',b'DO-214AB_Handsoldering',b'2',b'',b'CDBC560-G',b'0.67'
+9,b'',b'D_TVS',b'D4',b'D_TVS',b'DO-214AB_Handsoldering',b'1',b'',b'SMCJ48A',b'0.442'
+10,b'',b'D_TVS_x2_AAC',b'D3',b'D_TVS_x2_AAC',b'SOT-23_Handsoldering',b'1',b'',b'CDSOT23-SM712',b'1.53'
+11,b'',b'FUSE',b'F1',b'FUSE',b'Fuse_SMD1206_HandSoldering',b'1',b'',b'Littelfuse 1206SFS200F/63-2',b'0.6'
+12,b'',b'FILTER',b'FB2',b'FILTER',b'R_0805_HandSoldering',b'1',b'',b'BLM21AG221SN1D',b'0.141'
+13,b'',b'FILTER',b'FB1',b'FILTER - POWER',b'R_0805_HandSoldering',b'1',b'',b'BLM21PG221SN1D',b'0.104'
+14,b'',b'Jumper_NO_Small',b'JP1 JP2 JP3 JP4 JP5 JP6 JP7 JP8',b'Jumper_NO_Small',b'R_0805_HandSoldering',b'8',b'',b'CRCW08050000Z0EA',b'0.094'
+15,b'',b'INDUCTOR_SMALL',b'L1',b'27u',b'Inductor_Bourns-SRR1210_HandSoldering',b'1',b'',b'SRR1210-270M',b'1'
+16,b'',b'CONN_02X04',b'P1',b'DEV-PINS',b'Pin_Header_Straight_2x04',b'1',b'',b'',b''
+17,b'',b'CONN_02X03',b'P2',b'End-Stops',b'Pin_Header_Straight_2x03',b'1',b'',b'',b''
+18,b'',b'CONN_02X04',b'P4',b'I2C',b'Pin_Header_Straight_2x04',b'1',b'',b'',b''
+19,b'',b'Conn_02x05_Odd_Even',b'P3',b'INPUT',b'Pin_Header_Straight_2x05_Pitch2.54mm',b'1',b'',b'Amphenol-861400402YO2LF',b'1.18'
+20,b'',b'CONN_02X03',b'P6',b'ISP',b'Pin_Header_Straight_2x03_Pitch2.54mm',b'1',b'',b'',b''
+21,b'',b'CONN_01X04',b'P7 P8',b'Motor',b'MKDS_1.5-4',b'2',b'',b'Amphenol-VI0421550000G',b'0.84'
+22,b'',b'R',b'R8 R9',b'10',b'R_0805_HandSoldering',b'2',b'',b'CRCW080510R0JNEA',b'0.091'
+23,b'',b'R',b'R13',b'10.5k',b'R_0805_HandSoldering',b'1',b'',b'CRCW080510K5FKEA',b'0.091'
+24,b'',b'R',b'R4 R7',b'100k',b'R_0805_HandSoldering',b'2',b'',b'CRCW0805100KJNEA',b'0.091'
+25,b'',b'R',b'R18',b'10k',b'R_0805_HandSoldering',b'1',b'',b'CRCW080510K0JNEA',b'0.091'
+26,b'',b'R',b'R1',b'120',b'R_0805_HandSoldering',b'1',b'',b'CRCW0805120RJNEA',b'0.091'
+27,b'',b'R',b'R12',b'147k',b'R_0805_HandSoldering',b'1',b'',b'CRCW0805147KFKEA',b'0.091'
+28,b'',b'R',b'R14 R15',b'200',b'R_0805_HandSoldering',b'2',b'',b'CRCW0805200RJNEA',b'0.091'
+29,b'',b'R',b'R10',b'221k',b'R_0805_HandSoldering',b'1',b'',b'CRCW0805221KFKEA',b'0.091'
+30,b'',b'R',b'R11',b'26.7k',b'R_0805_HandSoldering',b'1',b'',b'CRCW080526K7FKEA',b'0.091'
+31,b'',b'R',b'R2 R3 R5 R6 R16 R17',b'4.7k',b'R_0805_HandSoldering',b'6',b'',b'CRCW08054K70JNEA',b'0.091'
+32,b'Arduino Pro Mini - ATmega328p',b'Arduino_Pro_Mini',b'U1',b'Arduino_Pro_Mini',b'Arduino_Pro_Mini',b'1',b'',b'3M-929974-01-30-RK',b'1.98'
+33,b'I2C Multiplexer',b'PCA9540B',b'U7',b'PCA9540B',b'TSSOP-8_3x3mm_Pitch0.65mm_HandSoldering',b'1',b'',b'PCA9540BDP 118',b'1.23'
+34,b'Stepper Motor Driver',b'Pololu_A4988',b'U3 U4',b'Pololu_A4988',b'Pololu_A4988',b'2',b'',b'3M-929974-01-30-RK',b'1.98'
+35,b'Dual DC Motor Driver',b'Pololu_Dual_MC33926',b'U6',b'Pololu_Dual_MC33926',b'Pololu_Dual_MC33926',b'1',b'',b'Wurth-61304011121',b'1.31'
+36,b'RS485 Transceiver',b'SN65HVD485EDR',b'U2',b'SN65HVD485EDR',b'SOIC-8_3.9x4.9mm_Pitch1.27mm_HandSoldering',b'1',b'',b'SN65HVD485EDR',b'1.74'
+37,b'Temperature sensor - I2C',b'TC74',b'U8',b'TC74',b'SOT-23-5_HandSoldering',b'1',b'',b'TC74A05.0VCTTR',b'0.886'
+38,b'',b'TPS54360DDA',b'U5',b'TPS54360DDA',b'HSOP-8',b'1',b'',b'TPS54360DDAR',b'4'
+
+
+
+
+
+Component Groups:,38
+Component Count:,64
+Fitted Components:,64
+Number of PCBs:,1
+Total components:,64
+Schematic Version:,v2
+Schematic Date:,2018-01-21
+BoM Date:,b'Sun 21 Jan 2018 06:33:01 PM EET'
+Schematic Source:,b'/home/azisi/Documents/SatNOGS/satnogs-rotator-controller/satnogs_controller/satnogs_controller.sch'
+KiCad Version:,b'Eeschema 4.0.7'

@@ -1,45 +1,16 @@
 EESchema Schematic File Version 2
 LIBS:encoder_as5601-rescue
 LIBS:satnogs
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
 LIBS:encoder_as5601-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
+Title "AS5601 - Encoder"
+Date "2018-01-21"
 Rev ""
-Comp ""
+Comp "Libre Space Foundation"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -52,12 +23,9 @@ P 5510 3460
 F 0 "U1" H 5510 3460 60  0000 C CNN
 F 1 "AS5601" H 5510 3160 60  0000 C CNN
 F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 5510 3460 60  0001 C CNN
-F 3 "www.mouser.com/ds/2/588/AS5601_Datasheet-771178.pdf" H 5510 3460 60  0001 C CNN
-F 4 "Mouser 985-AS5601-ASOM" H 5510 3460 60  0001 C CNN "Distributor"
-F 5 "AS5601-ASOM" H 5510 3460 60  0001 C CNN "Manufacturer"
-F 6 "SOIC-8" H 5510 3460 60  0001 C CNN "Package"
-F 7 "-" H 5510 3460 60  0001 C CNN "Notes"
-F 8 "2.78€" H 5510 3460 60  0001 C CNN "Price"
+F 3 "" H 5510 3460 60  0001 C CNN
+F 4 "AS5601-ASOM" H 5510 3460 60  0001 C CNN "Mnf."
+F 5 "2.78" H 5510 3460 60  0001 C CNN "Price"
 	1    5510 3460
 	1    0    0    -1  
 $EndComp
@@ -71,12 +39,9 @@ P 4110 3560
 F 0 "C1" H 4120 3630 50  0000 L CNN
 F 1 "100n" H 4120 3480 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4110 3560 50  0001 C CNN
-F 3 "-" H 4110 3560 50  0001 C CNN
-F 4 "-" H 4110 3560 60  0001 C CNN "Distributor"
-F 5 "-" H 4110 3560 60  0001 C CNN "Manufacturer"
-F 6 "0805" H 4110 3560 60  0001 C CNN "Package"
-F 7 "-" H 4110 3560 60  0001 C CNN "Notes"
-F 8 "0.1€" H 4110 3560 60  0001 C CNN "Price"
+F 3 "" H 4110 3560 50  0001 C CNN
+F 4 "08053C104KAT2A" H 4110 3560 60  0001 C CNN "Mnf."
+F 5 "0.09" H 4110 3560 60  0001 C CNN "Price"
 	1    4110 3560
 	1    0    0    -1  
 $EndComp
@@ -87,12 +52,9 @@ P 4710 3560
 F 0 "C2" H 4720 3630 50  0000 L CNN
 F 1 "1u" H 4720 3480 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4710 3560 50  0001 C CNN
-F 3 "-" H 4710 3560 50  0001 C CNN
-F 4 "-" H 4710 3560 60  0001 C CNN "Distributor"
-F 5 "-" H 4710 3560 60  0001 C CNN "Manufacturer"
-F 6 "0805" H 4710 3560 60  0001 C CNN "Package"
-F 7 "-" H 4710 3560 60  0001 C CNN "Notes"
-F 8 "0.1 €" H 4710 3560 60  0001 C CNN "Price"
+F 3 "" H 4710 3560 50  0001 C CNN
+F 4 "CC0805KKX7R7BB105" H 4710 3560 60  0001 C CNN "Mnf."
+F 5 "0.085" H 4710 3560 60  0001 C CNN "Price"
 	1    4710 3560
 	1    0    0    -1  
 $EndComp
@@ -140,12 +102,9 @@ P 5510 4610
 F 0 "P1" H 5510 4910 50  0000 C CNN
 F 1 "CONN_02X05" H 5510 4310 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch2.54mm" H 5510 3410 50  0001 C CNN
-F 3 "https://cdn.sparkfun.com/datasheets/Prototyping/01103.pdf" H 5510 3410 50  0001 C CNN
-F 4 "SparkFun COM-12792" H 5510 4610 60  0001 C CNN "Distributor"
-F 5 "-" H 5510 4610 60  0001 C CNN "Manufacturer"
-F 6 "2x40 pin right-angle PTH pitch 2.54" H 5510 4610 60  0001 C CNN "Package"
-F 7 "-" H 5510 4610 60  0001 C CNN "Notes"
-F 8 "1.85€" H 5510 4610 60  0001 C CNN "Price"
+F 3 "" H 5510 3410 50  0001 C CNN
+F 4 "Amphenol-861400402YO2LF" H 5510 4610 60  0001 C CNN "Mnf."
+F 5 "1.18" H 5510 4610 60  0001 C CNN "Price"
 	1    5510 4610
 	-1   0    0    1   
 $EndComp
@@ -225,12 +184,9 @@ P 6410 3160
 F 0 "R1" V 6490 3160 50  0000 C CNN
 F 1 "4k7" V 6410 3160 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 6340 3160 50  0001 C CNN
-F 3 "-" H 6410 3160 50  0001 C CNN
-F 4 "-" V 6410 3160 60  0001 C CNN "Distributor"
-F 5 "-" V 6410 3160 60  0001 C CNN "Manufacturer"
-F 6 "0805" V 6410 3160 60  0001 C CNN "Package"
-F 7 "-" V 6410 3160 60  0001 C CNN "Notes"
-F 8 "0.1 €" V 6410 3160 60  0001 C CNN "Price"
+F 3 "" H 6410 3160 50  0001 C CNN
+F 4 "CRCW08054K70JNEA" V 6410 3160 60  0001 C CNN "Mnf."
+F 5 "0.091" V 6410 3160 60  0001 C CNN "Price"
 	1    6410 3160
 	1    0    0    -1  
 $EndComp
@@ -241,12 +197,9 @@ P 6710 3160
 F 0 "R2" V 6790 3160 50  0000 C CNN
 F 1 "4k7" V 6710 3160 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 6640 3160 50  0001 C CNN
-F 3 "-" H 6710 3160 50  0001 C CNN
-F 4 "-" V 6710 3160 60  0001 C CNN "Distributor"
-F 5 "-" V 6710 3160 60  0001 C CNN "Manufacturer"
-F 6 "0805" V 6710 3160 60  0001 C CNN "Package"
-F 7 "-" V 6710 3160 60  0001 C CNN "Notes"
-F 8 "0.1 €" V 6710 3160 60  0001 C CNN "Price"
+F 3 "" H 6710 3160 50  0001 C CNN
+F 4 "CRCW08054K70JNEA" V 6710 3160 60  0001 C CNN "Mnf."
+F 5 "0.091" V 6710 3160 60  0001 C CNN "Price"
 	1    6710 3160
 	1    0    0    -1  
 $EndComp
@@ -333,12 +286,9 @@ P 6315 4610
 F 0 "Q1" H 6615 4660 50  0000 R CNN
 F 1 "Q_NMOS_GSD" H 6965 4560 50  0000 R CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 6515 4710 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/427/SI2312CD-244454.pdf" H 6315 4610 50  0001 C CNN
-F 4 "Mouser 781-SI2312CDS-T1-GE3" H 6315 4610 60  0001 C CNN "Distributor"
-F 5 "SI2312CDS-T1-GE3" H 6315 4610 60  0001 C CNN "Manufacturer"
-F 6 "SOT-23-3" H 6315 4610 60  0001 C CNN "Package"
-F 7 "-" H 6315 4610 60  0001 C CNN "Notes"
-F 8 "0.398" H 6315 4610 60  0001 C CNN "Price"
+F 3 "" H 6315 4610 50  0001 C CNN
+F 4 "SI2312CDS-T1-GE3" H 6315 4610 60  0001 C CNN "Mnf."
+F 5 "0.398" H 6315 4610 60  0001 C CNN "Price"
 	1    6315 4610
 	0    -1   1    0   
 $EndComp
