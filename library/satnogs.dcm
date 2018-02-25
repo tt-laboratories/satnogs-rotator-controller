@@ -25,7 +25,7 @@ D RS485 Transceiver
 $ENDCMP
 #
 $CMP TC74
-D Temperature sensor, I2C
+D Temperature sensor - I2C
 $ENDCMP
 #
 $CMP TCST2103

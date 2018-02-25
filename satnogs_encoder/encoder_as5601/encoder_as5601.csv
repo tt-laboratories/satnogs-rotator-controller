@@ -1,8 +1,22 @@
-Reference, Value, Footprint, Datasheet, Distributor, Manufacturer, Package, Notes, Price
-U1,AS5601,Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm,www.mouser.com/ds/2/588/AS5601_Datasheet-771178.pdf,,Mouser 985-AS5601-ASOM,AS5601-ASOM,SOIC-8,-,2.78€,
-C1,100n,Capacitors_SMD:C_0805_HandSoldering,-,,-,-,0805,-,0.1€,
-C2,1u,Capacitors_SMD:C_0805_HandSoldering,-,,-,-,0805,-,0.1 €,
-P1,CONN_02X05,Pin_Headers:Pin_Header_Straight_2x05,https://cdn.sparkfun.com/datasheets/Prototyping/01103.pdf,,SparkFun COM-12792,-,2x40 pin right-angle PTH pitch 2.54,-,1.85€,
-R1,4k7,Resistors_SMD:R_0805_HandSoldering,-,,-,-,0805,-,0.1 €,
-R2,4k7,Resistors_SMD:R_0805_HandSoldering,-,,-,-,0805,-,0.1 €,
-Q1,Q_NMOS_GSD,TO_SOT_Packages_SMD:SOT-23_Handsoldering,http://www.mouser.com/ds/2/427/SI2312CD-244454.pdf,,Mouser 781-SI2312CDS-T1-GE3,SI2312CDS-T1-GE3,SOT-23-3,-,0.398,
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet,Mnf.,Price
+1,b'',b'C_Small',b'C1',b'100n',b'C_0805_HandSoldering',b'1',b'',b'08053C104KAT2A',b'0.09'
+2,b'',b'C_Small',b'C2',b'1u',b'C_0805_HandSoldering',b'1',b'',b'CC0805KKX7R7BB105',b'0.085'
+3,b'',b'CONN_02X05',b'P1',b'CONN_02X05',b'Pin_Header_Straight_2x05_Pitch2.54mm',b'1',b'',b'Amphenol-861400402YO2LF',b'1.18'
+4,b'',b'Q_NMOS_GSD',b'Q1',b'Q_NMOS_GSD',b'SOT-23_Handsoldering',b'1',b'',b'SI2312CDS-T1-GE3',b'0.398'
+5,b'',b'R',b'R1 R2',b'4k7',b'R_0805_HandSoldering',b'2',b'',b'CRCW08054K70JNEA',b'0.091'
+6,b'',b'AS5601-RESCUE-encoder_as5601',b'U1',b'AS5601',b'SOIC-8_3.9x4.9mm_Pitch1.27mm',b'1',b'',b'AS5601-ASOM',b'2.78'
+
+
+
+
+
+Component Groups:,6
+Component Count:,7
+Fitted Components:,7
+Number of PCBs:,1
+Total components:,7
+Schematic Version:,
+Schematic Date:,2018-01-21
+BoM Date:,b'Sun 21 Jan 2018 07:08:43 PM EET'
+Schematic Source:,b'/home/azisi/Documents/SatNOGS/satnogs-rotator-controller/satnogs_encoder/encoder_as5601/encoder_as5601.sch'
+KiCad Version:,b'Eeschema 4.0.7'
