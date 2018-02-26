@@ -23,7 +23,7 @@ Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet
 22,b'',b'R',b'R8 R9',b'10',b'R_0805_HandSoldering',b'2',b'',b'CRCW080510R0JNEA',b'0.091'
 23,b'',b'R',b'R13',b'10.5k',b'R_0805_HandSoldering',b'1',b'',b'CRCW080510K5FKEA',b'0.091'
 24,b'',b'R',b'R4 R7',b'100k',b'R_0805_HandSoldering',b'2',b'',b'CRCW0805100KJNEA',b'0.091'
-25,b'',b'R',b'R18',b'10k',b'R_0805_HandSoldering',b'1',b'',b'CRCW080510K0JNEA',b'0.091'
+25,b'',b'R',b'R18 R19',b'10k',b'R_0805_HandSoldering',b'2',b'',b'CRCW080510K0JNEA',b'0.091'
 26,b'',b'R',b'R1',b'120',b'R_0805_HandSoldering',b'1',b'',b'CRCW0805120RJNEA',b'0.091'
 27,b'',b'R',b'R12',b'147k',b'R_0805_HandSoldering',b'1',b'',b'CRCW0805147KFKEA',b'0.091'
 28,b'',b'R',b'R14 R15',b'200',b'R_0805_HandSoldering',b'2',b'',b'CRCW0805200RJNEA',b'0.091'
@@ -43,10 +43,10 @@ Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet
 
 
 Component Groups:,38
-Component Count:,64
-Fitted Components:,64
+Component Count:,65
+Fitted Components:,65
 Number of PCBs:,1
-Total components:,64
+Total components:,65
 Schematic Version:,v2
 Schematic Date:,2018-01-21
 BoM Date:,b'Sun 21 Jan 2018 06:33:01 PM EET'

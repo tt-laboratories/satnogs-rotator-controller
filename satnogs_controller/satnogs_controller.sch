@@ -1,4 +1,79 @@
 EESchema Schematic File Version 2
+LIBS:74xgxx
+LIBS:74xx
+LIBS:ac-dc
+LIBS:actel
+LIBS:adc-dac
+LIBS:Altera
+LIBS:analog_devices
+LIBS:analog_switches
+LIBS:atmel
+LIBS:audio
+LIBS:brooktre
+LIBS:cmos4000
+LIBS:cmos_ieee
+LIBS:conn
+LIBS:contrib
+LIBS:cypress
+LIBS:dc-dc
+LIBS:device
+LIBS:digital-audio
+LIBS:diode
+LIBS:display
+LIBS:dsp
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:hc11
+LIBS:intel
+LIBS:interface
+LIBS:ir
+LIBS:Lattice
+LIBS:linear
+LIBS:maxim
+LIBS:memory
+LIBS:microchip
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:microcontrollers
+LIBS:motor_drivers
+LIBS:motorola
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:opto
+LIBS:Oscillators
+LIBS:philips
+LIBS:power
+LIBS:powerint
+LIBS:Power_Management
+LIBS:pspice
+LIBS:references
+LIBS:regul
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:siliconi
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:texas
+LIBS:transf
+LIBS:transistors
+LIBS:ttl_ieee
+LIBS:valves
+LIBS:video
+LIBS:Xicor
+LIBS:xilinx
+LIBS:Zilog
 LIBS:satnogs
 LIBS:satnogs_controller-cache
 EELAYER 25 0
@@ -1762,7 +1837,7 @@ B
 Wire Wire Line
 	1345 6890 1345 6835
 Wire Wire Line
-	1125 5920 1030 5920
+	1030 5920 1125 5920
 Wire Wire Line
 	2350 5920 3740 5920
 Connection ~ 2830 5920
@@ -2069,7 +2144,7 @@ Wire Wire Line
 Wire Wire Line
 	1550 2850 1550 2920
 Wire Wire Line
-	1550 2890 1710 2890
+	870  2890 1710 2890
 Connection ~ 1550 2890
 Wire Wire Line
 	900  2620 810  2620
@@ -2297,4 +2372,21 @@ F 5 "1.18" H 1165 4580 60  0001 C CNN "Price"
 	1    1165 4580
 	1    0    0    -1  
 $EndComp
+$Comp
+L R R19
+U 1 1 5A945741
+P 870 3070
+F 0 "R19" V 950 3070 50  0000 C CNN
+F 1 "10k" V 870 3070 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 800 3070 50  0001 C CNN
+F 3 "" H 870 3070 50  0001 C CNN
+F 4 "CRCW080510K0JNEA" V 870 3070 60  0001 C CNN "Mnf."
+F 5 "0.091" V 870 3070 60  0001 C CNN "Price"
+	1    870  3070
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	870  3220 1150 3220
+Wire Wire Line
+	870  2890 870  2920
 $EndSCHEMATC

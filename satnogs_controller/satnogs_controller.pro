@@ -1,4 +1,4 @@
-update=Fri 10 Nov 2017 11:01:37 EET
+update=Mon 26 Feb 2018 08:08:37 PM EET
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -37,7 +35,7 @@ SpiceUseNetNumbers=0
 LabSize=60
 [eeschema]
 version=1
-LibDir=
+LibDir=../library
 [eeschema/libraries]
 LibName1=/usr/share/kicad/kicad-library/library/74xgxx
 LibName2=/usr/share/kicad/kicad-library/library/74xx
@@ -115,3 +113,5 @@ LibName73=/usr/share/kicad/kicad-library/library/Xicor
 LibName74=/usr/share/kicad/kicad-library/library/xilinx
 LibName75=/usr/share/kicad/kicad-library/library/Zilog
 LibName76=/home/azisi/Documents/SatNOGS/satnogs-rotator-controller/library/satnogs
+[general]
+version=1
