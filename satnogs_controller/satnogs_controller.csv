@@ -7,7 +7,7 @@ Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet
 6,b'',b'C_Small',b'C9',b'47u',b'C_1210_HandSoldering',b'1',b'',b'GRM32ER61C476ME15L',b'0.851'
 7,b'',b'C_Small',b'C7',b'7.5n',b'C_0805_HandSoldering',b'1',b'',b'GRM2195C1H752JA01D',b'0.244'
 8,b'',b'D_Schottky',b'D1 D2',b'D_Schottky',b'DO-214AB_Handsoldering',b'2',b'',b'CDBC560-G',b'0.67'
-9,b'',b'D_TVS',b'D4',b'D_TVS',b'DO-214AB_Handsoldering',b'1',b'',b'SMCJ48A',b'0.442'
+9,b'',b'D_TVS',b'D4',b'D_TVS',b'DO-214AB_Handsoldering',b'1',b'',b'SMCJ48CA-TR',b'0.442'
 10,b'',b'D_TVS_x2_AAC',b'D3',b'D_TVS_x2_AAC',b'SOT-23_Handsoldering',b'1',b'',b'CDSOT23-SM712',b'1.53'
 11,b'',b'FUSE',b'F1',b'FUSE',b'Fuse_SMD1206_HandSoldering',b'1',b'',b'Littelfuse 1206SFS200F/63-2',b'0.6'
 12,b'',b'FILTER',b'FB2',b'FILTER',b'R_0805_HandSoldering',b'1',b'',b'BLM21AG221SN1D',b'0.141'
