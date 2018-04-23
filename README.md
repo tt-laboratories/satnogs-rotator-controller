@@ -8,17 +8,13 @@ Firmware can be found on [satnogs-rotator-firmware](https://gitlab.com/librespac
 
 ## Documentation
 
-More information can be found in our [documentation](http://satnogs.org/documentation/hardware/), or our [wiki](https://wiki.satnogs.org).
-
-Please check the documentation to find which release of the rotator controller matches your mechanical rotator version.
+More information can be found in our [wiki](https://wiki.satnogs.org/SatNOGS_Rotator_Controller).
 
 ## Repository policy
 
 SatNOGS hardware repositories only track source design files. All needed derivative files (e.g. stl, grb etc) for production are created per release, packaged in an archive and uploaded linked to a  [release](https://gitlab.com/librespacefoundation/satnogs/satnogs-rotator-controller/tags).
 
-Each major release (x.0.0) is branched out of master. Subsequent fixes (minor or not) are commited on those branches and tagged accordingly.
-
-Master branch is most times under active development, so expect things to break. For production ready and previous releases source files check tags and branches.
+Master branch is most times under active development, so expect things to break. For production ready and previous releases source files check tags.
 
 ## Contribute
 
