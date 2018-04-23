@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name encoder_as5601-rescue)(type Legacy)(uri ${KIPRJMOD}/encoder_as5601-rescue.lib)(options "")(descr ""))
+  (lib (name satnogs)(type Legacy)(uri /home/azisi/Documents/SatNOGS/satnogs-rotator-controller/library/satnogs.lib)(options "")(descr ""))
+)
