@@ -6,3 +6,4 @@
 *.bck
 *.kicad_pcb-bak
 *.fcstd1
+*/rescue-backup
