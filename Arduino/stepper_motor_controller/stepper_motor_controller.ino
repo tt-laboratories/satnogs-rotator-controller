@@ -24,7 +24,7 @@
 
 #define HOME_DELAY 6000 //Time for homing Decceleration in millisecond
 
-typedef enum { AZIMUTH_ERROR, ELEVATION_ERROR } Error;
+typedef enum { AZIMUTH_ERROR, ELEVATION_ERROR, READ_ERROR } Error;
 
 /*Global Variables*/
 unsigned long t_DIS = 0; //time to disable the Motors
@@ -231,6 +231,7 @@ void cmd_proc(int &stepAz, int &stepEl)
         }
         /*Fill the buffer with incoming data*/
         else {
+            if (counter > 255) error(READ_ERROR);
             buffer[counter] = incomingByte;
             counter++;
         }
@@ -250,6 +251,11 @@ void error(Error err)
         while (1) {
             Serial.println("AL002");
             delay(100);
+        }
+    }
+    case (READ_ERROR):
+        while (1) {
+            Serial.println("AL003");
         }
     }
 }
