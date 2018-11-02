@@ -24,6 +24,8 @@
 
 #define HOME_DELAY 6000 //Time for homing Decceleration in millisecond
 
+typedef enum { AZIMUTH_ERROR, ELEVATION_ERROR } Error;
+
 /*Global Variables*/
 unsigned long t_DIS = 0; //time to disable the Motors
 /*Define a stepper and the pins it will use*/
@@ -108,7 +110,7 @@ void Homing(int AZsteps, int ELsteps)
             n_AZ++;
             AZsteps = deg2step(pow(-1,n_AZ)*n_AZ*ANGLE_SCANNING_MULT);
             if (abs(n_AZ*ANGLE_SCANNING_MULT) > MAX_AZ_ANGLE) {
-                error(0);
+                error(AZIMUTH_ERROR);
                 break;
             }
             AZstepper.moveTo(AZsteps);
@@ -117,7 +119,7 @@ void Homing(int AZsteps, int ELsteps)
             n_EL++;
             ELsteps = deg2step(pow(-1,n_EL)*n_EL*ANGLE_SCANNING_MULT);
             if (abs(n_EL*ANGLE_SCANNING_MULT) > MAX_EL_ANGLE) {
-                error(1);
+                error(ELEVATION_ERROR);
                 break;
             }
             ELstepper.moveTo(ELsteps);
@@ -236,24 +238,17 @@ void cmd_proc(int &stepAz, int &stepEl)
 }
 
 /*Error Handling*/
-void error(int num_error)
+void error(Error err)
 {
-    switch (num_error) {
-        /*Azimuth error*/
-    case (0):
+    switch (err) {
+    case (AZIMUTH_ERROR):
         while (1) {
             Serial.println("AL001");
             delay(100);
         }
-        /*Elevation error*/
-    case (1):
+    case (ELEVATION_ERROR):
         while (1) {
             Serial.println("AL002");
-            delay(100);
-        }
-    default:
-        while (1) {
-            Serial.println("AL000");
             delay(100);
         }
     }
