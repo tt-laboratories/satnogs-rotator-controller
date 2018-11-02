@@ -172,8 +172,8 @@ void cmd_proc(int &stepAz, int &stepEl)
         else if (incomingByte == '\n') {
             p = buffer;
             buffer[counter] = 0;
-            if (buffer[0] == 'A' && buffer[1] == 'Z') {
-                if (buffer[2] == ' ' && buffer[3] == 'E' && buffer[4] == 'L') {
+            if (strncmp(buffer, "AZ", 2) == 0) {
+                if (strncmp(buffer + 2, " EL", 3) == 0) {
                     /* Get position */
                     Serial.print("AZ");
                     Serial.print(step2deg(AZstepper.currentPosition()), 1);
@@ -201,7 +201,7 @@ void cmd_proc(int &stepAz, int &stepEl)
                 }
             }
             /* Stop Moving */
-            else if (buffer[0] == 'S' && buffer[1] == 'A' && buffer[2] == ' ' && buffer[3] == 'S' && buffer[4] == 'E') {
+            else if (strncmp(buffer, "SA SE", 5) == 0) {
                 /* Get position */
                 Serial.print("AZ");
                 Serial.print(step2deg(AZstepper.currentPosition()), 1);
@@ -212,7 +212,7 @@ void cmd_proc(int &stepAz, int &stepEl)
                 stepEl = ELstepper.currentPosition();
             }
             /* Reset the rotator */
-            else if (buffer[0] == 'R' && buffer[1] == 'E' && buffer[2] == 'S' && buffer[3] == 'E' && buffer[4] == 'T') {
+            else if (strncmp(buffer, "RESET", 4) == 0) {
                 /* Get position */
                 Serial.print("AZ");
                 Serial.print(step2deg(AZstepper.currentPosition()), 1);
