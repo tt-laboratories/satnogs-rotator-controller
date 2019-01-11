@@ -3,20 +3,19 @@
 #include <math.h>
 #include <AccelStepper.h>
 
-#define DIR_AZ 18 //PIN for Azimuth Direction
-#define STEP_AZ 10 //PIN for Azimuth Steps
-#define DIR_EL 6 //PIN for Elevation Direction
-#define STEP_EL 7 //PIN for Elevation Steps
+#define DIR_AZ 6 //PIN for Azimuth Direction
+#define STEP_AZ 3 //PIN for Azimuth Steps
+#define DIR_EL 5 //PIN for Elevation Direction
+#define STEP_EL 2 //PIN for Elevation Steps
 
-#define MS1 9 //PIN for step size
 #define EN 8 //PIN for Enable or Disable Stepper Motors
 
 #define SPR 200 //Step Per Revolution
-#define RATIO 60 //Gear ratio
+#define RATIO 1 //Gear ratio sollte 60 sein
 #define T_DELAY 60000 //Time to disable the motors in millisecond
 
-#define HOME_AZ 4 //Homing switch for Azimuth
-#define HOME_EL 5 //Homing switch for Elevation
+#define HOME_AZ 10 //Homing switch for Azimuth
+#define HOME_EL 9 //Homing switch for Elevation
 /*The MAX_ANGLE depends of ANGLE_SCANNING_MULT and maybe misbehave for large values*/
 #define ANGLE_SCANNING_MULT 180 //Angle scanning multiplier
 #define MAX_AZ_ANGLE 360 //Maximum Angle of Azimuth for homing scanning
@@ -31,32 +30,36 @@ AccelStepper AZstepper(1, STEP_AZ, DIR_AZ);
 AccelStepper ELstepper(1, STEP_EL, DIR_EL);
 
 void setup()
-{  
+{
   /*Change these to suit your stepper if you want*/
   AZstepper.setMaxSpeed(150);
   AZstepper.setAcceleration(50);
-  
+
   /*Change these to suit your stepper if you want*/
   ELstepper.setMaxSpeed(150);
   ELstepper.setAcceleration(50);
-  
+
   /*Enable Motors*/
   pinMode(EN, OUTPUT);
   digitalWrite(EN, LOW);
-  /*Step size*/
-  pinMode(MS1, OUTPUT);
-  digitalWrite(MS1, LOW); //Full step
   /*Homing switch*/
   pinMode(HOME_AZ, INPUT);
   pinMode(HOME_EL, INPUT);
   /*Serial Communication*/
   Serial.begin(19200);
+  while (!Serial) {
+    ; // wait for serial port to connect. Needed for native USB port only
+  }
+  Serial.println("Hallo SatNOGS");
+
   /*Initial Homing*/
+  Serial.println("Go Home");
   Homing(deg2step(-ANGLE_SCANNING_MULT), deg2step(-ANGLE_SCANNING_MULT));
+  Serial.println("i'm Home now");
 }
 
 void loop()
-{ 
+{
   /*Define the steps*/
   static int AZstep = 0;
   static int ELstep = 0;
@@ -72,7 +75,7 @@ void loop()
   /*Enable Motors*/
   else
     digitalWrite(EN, LOW);
-    
+
   /*Read the steps from serial*/
   cmd_proc(AZstep, ELstep);
   /*Move the Azimuth & Elevation Motor*/
@@ -88,26 +91,43 @@ void Homing(int AZsteps, int ELsteps)
   int n_EL = 1; //Times that EL angle has changed
   boolean isHome_AZ = false;
   boolean isHome_EL = false;
-  
+
+  Serial.print("Homing: AZsteps:" );
+  Serial.println( AZsteps );
+
+
   AZstepper.moveTo(AZsteps);
+
+  Serial.print("Homing: ELsteps:" );
+  Serial.println( ELsteps );
+
   ELstepper.moveTo(ELsteps);
-  
+
   while(isHome_AZ == false || isHome_EL == false)
   {
     value_Home_AZ = digitalRead(HOME_AZ);
     value_Home_EL = digitalRead(HOME_EL);
+
+    Serial.print("Homing: value_Home_AZ:" );
+    Serial.println( value_Home_AZ );
+    Serial.print("Homing: value_Home_EL:" );
+    Serial.println( value_Home_EL );
+
     /* Change to LOW according to Home sensor */
     if (value_Home_AZ == HIGH)
     {
       AZstepper.moveTo(AZstepper.currentPosition());
       isHome_AZ = true;
-    }   
+    }
     /* Change to LOW according to Home sensor */
     if (value_Home_EL == HIGH)
     {
       ELstepper.moveTo(ELstepper.currentPosition());
       isHome_EL = true;
     }
+    Serial.print("Homing: AZstepper.distanceToGo():" );
+    Serial.println( AZstepper.distanceToGo() );
+
     if (AZstepper.distanceToGo() == 0 && !isHome_AZ)
     {
       n_AZ++;
@@ -118,9 +138,9 @@ void Homing(int AZsteps, int ELsteps)
         break;
       }
       AZstepper.moveTo(AZsteps);
-    } 
+    }
     if (ELstepper.distanceToGo() == 0 && !isHome_EL)
-    { 
+    {
       n_EL++;
       ELsteps = deg2step(pow(-1,n_EL)*n_EL*ANGLE_SCANNING_MULT);
       if (abs(n_EL*ANGLE_SCANNING_MULT) > MAX_EL_ANGLE)
@@ -130,22 +150,25 @@ void Homing(int AZsteps, int ELsteps)
       }
       ELstepper.moveTo(ELsteps);
     }
-    
+
     AZstepper.run();
     ELstepper.run();
   }
+
+  Serial.println("nach dem while" );
+
   /*Delay to Deccelerate*/
-  long time = millis();  
+  long time = millis();
   while(millis() - time < HOME_DELAY)
-  {  
+  {
     AZstepper.run();
     ELstepper.run();
   }
   /*Reset the steps*/
   AZstepper.setCurrentPosition(0);
-  ELstepper.setCurrentPosition(0); 
+  ELstepper.setCurrentPosition(0);
 }
- 
+
 /*EasyComm 2 Protocol & Calculate the steps*/
 void cmd_proc(int &stepAz, int &stepEl)
 {
@@ -156,9 +179,9 @@ void cmd_proc(int &stepAz, int &stepEl)
   char *str;
   static int counter=0;
   char data[100];
-  
+
   double angleAz,angleEl;
-  
+
   /*Read from serial*/
   while (Serial.available() > 0)
   {
@@ -239,7 +262,7 @@ void cmd_proc(int &stepAz, int &stepEl)
         /*Zero the steps*/
         stepAz = 0;
         stepEl = 0;
-      }      
+      }
       counter = 0;
       /*Reset the disable motor time*/
       t_DIS = 0;
@@ -285,7 +308,7 @@ void stepper_move(int stepAz, int stepEl)
 {
   AZstepper.moveTo(stepAz);
   ELstepper.moveTo(stepEl);
-    
+
   AZstepper.run();
   ELstepper.run();
 }
