@@ -32,6 +32,49 @@ unsigned long t_DIS = 0; // time to disable the Motors
 AccelStepper AZstepper(1, STEP_AZ, DIR_AZ);
 AccelStepper ELstepper(1, STEP_EL, DIR_EL);
 
+/* Error Handling */
+void error(Error err)
+{
+    switch (err) {
+    case (AZIMUTH_ERROR):
+        while (1) {
+            Serial.println("AL001");
+            delay(100);
+        }
+    case (ELEVATION_ERROR):
+        while (1) {
+            Serial.println("AL002");
+            delay(100);
+        }
+    case (READ_ERROR):
+        while (1) {
+            Serial.println("AL003");
+        }
+    }
+}
+
+/* Send pulses to stepper motor drivers */
+void stepper_move(int stepAz, int stepEl)
+{
+    AZstepper.moveTo(stepAz);
+    ELstepper.moveTo(stepEl);
+
+    AZstepper.run();
+    ELstepper.run();
+}
+
+/* Convert degrees to steps */
+int deg2step(double deg)
+{
+    return(RATIO* SPR *deg/360);
+}
+
+/* Convert steps to degrees */
+double step2deg(int Step)
+{
+    return(360.00* Step/(SPR *RATIO));
+}
+
 void setup()
 {
     /* Change these to suit your stepper if you want */
@@ -239,48 +282,4 @@ void cmd_proc(int &stepAz, int &stepEl)
             counter++;
         }
     }
-}
-
-/* Error Handling */
-void error(Error err)
-{
-    switch (err) {
-    case (AZIMUTH_ERROR):
-        while (1) {
-            Serial.println("AL001");
-            delay(100);
-        }
-    case (ELEVATION_ERROR):
-        while (1) {
-            Serial.println("AL002");
-            delay(100);
-        }
-    }
-    case (READ_ERROR):
-        while (1) {
-            Serial.println("AL003");
-        }
-    }
-}
-
-/* Send pulses to stepper motor drivers */
-void stepper_move(int stepAz, int stepEl)
-{
-    AZstepper.moveTo(stepAz);
-    ELstepper.moveTo(stepEl);
-
-    AZstepper.run();
-    ELstepper.run();
-}
-
-/* Convert degrees to steps */
-int deg2step(double deg)
-{
-    return(RATIO* SPR *deg/360);
-}
-
-/* Convert steps to degrees */
-double step2deg(int Step)
-{
-    return(360.00* Step/(SPR *RATIO));
 }
